@@ -8,6 +8,11 @@ class DocumentsController < ApplicationController
   	
   	def list
   		@lists = Document.all;
+  		@lists.each do |f|
+  		if f.text == nil
+  			f.destroy;
+  		end
+  		end
   	end
   	
   	def show
