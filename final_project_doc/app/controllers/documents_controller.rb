@@ -4,7 +4,12 @@ class DocumentsController < ApplicationController
   		Document.create(text:document);
   	end
   	
-  	def show
+  	def list
   		Document.all;
+  	end
+  	
+  	def show
+  		v = Document.find(params[:id]);
+  		
   	end
 end
