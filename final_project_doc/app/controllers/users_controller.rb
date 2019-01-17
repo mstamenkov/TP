@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   		password = String(params[:password]);
   		
   		if(username == "admin" && password == "nqmatakava")
-  			redirect_to documents_new_path
+  			redirect_to documents_path
   			
   		else redirect_to users_login_path
   		

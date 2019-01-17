@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   post 'users/main'
   get 'users/main'
   get '/documents/:id', to: 'documents#show', as: 'id'
+  get '/documents.:id', to: 'documents#show'
+  delete '/documents/:id', to: 'documents#list'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
