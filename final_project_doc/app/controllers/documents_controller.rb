@@ -8,15 +8,10 @@ class DocumentsController < ApplicationController
   	
   	def list
   		@lists = Document.all;
-  		@lists.each do |f|
-  		if f.text == nil
-  			f.destroy;
-  		end
-  		end
   	end
   	
   	def show
-  		v = Document.find(params[:id]);
+  		@v = Document.find(params[:id]);
   		
   	end
 end
