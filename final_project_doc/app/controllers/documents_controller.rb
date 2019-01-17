@@ -1,8 +1,9 @@
 class DocumentsController < ApplicationController
-  	def new
+  	def create
   		document = String(params[:value]);
   		Document.create(text:document);
   	end
+  	
   	
   	def list
   		Document.all;
