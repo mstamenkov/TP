@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'documents/new'
   post 'documents/new'
-  get 'documents/show'
+  post '/documents/' ,to: 'documents#show'
   get 'users/login'
   post 'users/show'
   post 'users/main'
