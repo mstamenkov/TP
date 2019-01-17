@@ -2,7 +2,7 @@
 <p>Find me in app/views/documents/new.html.erb</p>
 <%= form_tag("/documents", method: "post") do %>
 	<p style="width:300px">
-		<%= text_area_tag(:password) %><br>
+		<%= text_area_tag(:password, nil, rows: 40, cols: 50) %><br>
 	</p>
 
 	<p>
