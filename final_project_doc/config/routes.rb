@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'users#login'
   get 'documents/new'
   post 'documents/new'
   post '/documents/' ,to: 'documents#create'
