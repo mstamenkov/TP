@@ -5,9 +5,10 @@
 <%= link_to "Edit your account", edit_user_registration_path %> <br>
 <%= link_to "Sign out", destroy_user_session_path, :method => :delete %> <br>
 <% @lists.each do |f| %>
-  ID: <%= f.id %><br/>
+  <br/>ID: <%= f.id %><br/>
   Name: <%= f.name %><br/>
   Description: <%= f.description %><br/>
   <%= f.text %><br/>
   
 <% end %>
+

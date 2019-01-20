@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'documents#list'
+  root 'documents#last'
   get 'documents/new'
   #get '/' ,to: 'documents#list'
   post 'documents/new'
