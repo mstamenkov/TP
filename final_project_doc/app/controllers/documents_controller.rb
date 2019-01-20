@@ -1,6 +1,8 @@
 class DocumentsController < ApplicationController
   	def create
   		document = String(params[:value]);
+  		name = String(params[:name]);
+  		description = String(params[:description]);
   		Document.create(text:document);
   		redirect_to documents_path;
   	end

@@ -1,10 +1,11 @@
 <h1>Documents#list</h1>
 <p>Find me in app/views/documents/list.html.erb</p>
 
-
-<%= link_to 'Create new document', documents_new_path %> <br>
-<%= link_to 'Log out', users_login_path %> <br>
+<%= link_to "Create new document", documents_new_path %> <br>
+<%= link_to "Edit your account", edit_user_registration_path %> <br>
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %> <br>
 <% @lists.each do |f| %>
   ID: <%= f.id %><br/>
   <%= f.text %><br/>
+  
 <% end %>
