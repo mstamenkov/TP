@@ -6,6 +6,8 @@
 <%= link_to "Sign out", destroy_user_session_path, :method => :delete %> <br>
 <% @lists.each do |f| %>
   ID: <%= f.id %><br/>
+  Name: <%= f.name %><br/>
+  Description: <%= f.description %><br/>
   <%= f.text %><br/>
   
 <% end %>

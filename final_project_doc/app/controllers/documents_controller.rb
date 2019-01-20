@@ -3,7 +3,7 @@ class DocumentsController < ApplicationController
   		document = String(params[:value]);
   		name = String(params[:name]);
   		description = String(params[:description]);
-  		Document.create(text:document);
+  		Document.create(text:document,name:name,description:description);
   		redirect_to documents_path;
   	end
   	
