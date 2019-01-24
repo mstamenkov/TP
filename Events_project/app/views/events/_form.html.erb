@@ -30,6 +30,8 @@
     <%= form.label :time %>
     <%= form.text_field :time %>
   </div>
+  
+  <%= form.collection_select :people_id, Person.order(:name),:id,:name, include_blank: true %>
 
   <div class="actions">
     <%= form.submit %>

@@ -1,3 +1,4 @@
 class Event < ApplicationRecord
-	has_many :people, dependent: :destroy
+	
+	belongs_to :people
 end
