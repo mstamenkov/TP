@@ -31,8 +31,10 @@
     <%= form.text_field :time %>
   </div>
   
-  <%= form.collection_select :people_id, Person.order(:name),:id,:name, include_blank: true %>
-
+  <%= form.label :person %>
+  <%= form.select :person_id do %>
+    <%= options_from_collection_for_select(Person.all, :id, :name) %>
+	<% end %>
   <div class="actions">
     <%= form.submit %>
   </div>
