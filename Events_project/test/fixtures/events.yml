@@ -4,10 +4,10 @@ one:
   name: MyString
   location: MyString
   description: MyString
-  time: MyString
+  time: 2019-01-25
 
 two:
   name: MyString
   location: MyString
   description: MyString
-  time: MyString
+  time: 2019-01-25
